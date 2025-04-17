@@ -84,6 +84,22 @@ body {
     justify-items: center;
   }
 
+  .content h1 {
+    font-size: xxx-large;
+    font-weight: bold;
+  }
+
+  .content h2 {
+    font-size: large;
+  }
+
+
+  .content p {
+    font-size: medium;
+    font-weight: lighter;
+    font-style: italic;
+  }
+
   .qbutton {
     display: inline-block;
     background-color: #220000;
