@@ -4,70 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shamitarao</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/html5reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <header>
+        <a class="skip" href="#main">Skip to Main content</a>
+    </header>
     <!-- Navigation bar -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-      <li><a href="favourites.html">Favourites</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+        </ul>
+    </nav>
 
-  <div class="carousel">
-    <div class="carousel-track">
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-      <span class="carousel-item">Welcome!౨ৎ</span>
-    </div>
-  </div>
-
-
-  <!-- main content -->
-  <main class="content">
-
-    <h1>Do you know Shamita?</h1>
-    <br>
-    <br>
-    <h2>Click below to find out how well you know her!</h2>
-    <br>
-    <p>Make sure you send her your score too</p>
-    <a href="quiz.html" class="qbutton">Quiz</a>
-  </main>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p class="footer-email">📧 shamita@umich.edu</p>
-      <div class="footer-copyright">
-        *ੈ✩‧₊˚ © Shamita Rao <span id="year"></span> *ੈ✩‧₊˚
+    <!-- Hero Section -->
+    <main class="hero">
+      <div class="hero-content">
+        <h1>DO YOU KNOW SHAMITA?</h1>
+        <h2>Take the quiz to find out how well you really know her</h2>
+        
+        <div class="quiz-button-container">
+          <a href="quiz.html" class="quiz-button">Start the Quiz</a>
+        </div>
       </div>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/shamitarao/" class="footer-link">LinkedIn</a>
-        <span class="divider">|</span>
-        <a href="https://github.com/shamita-rao" class="footer-link">GitHub</a>
+    </main>
+
+    <section class="fun-facts">
+      <h2>Did You Know?</h2>
+      <div class="facts-grid">
+          <div class="fact-card">
+              <span>🎓</span>
+              <p>I'm currently studying at the University of Michigan</p>
+          </div>
+          <div class="fact-card">
+              <span>🐱</span>
+              <p>I have a cat!</p>
+          </div>
+          <div class="fact-card">
+              <span>🎨</span>
+              <p>I love combining tech with creative design</p>
+          </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="js/global.js"></script>
+    <section class="current-faves">
+      <h2>My Current Favourites</h2>
+      <div class="faves-container">
+          <div class="fave-item">
+              <h3>📚 Book</h3>
+              <p>The Starless Sea by Erin Morgenstern</p>
+          </div>
+          <div class="fave-item">
+              <h3>🎵 Song</h3>
+              <p>No One Noticed by The Marias</p>
+          </div>
+          <div class="fave-item">
+              <h3>🍜 Food</h3>
+              <p>Chilli peanut ramen (by me)</p>
+          </div>
+      </div>
+      <a href="favourites.html" class="see-more">See all favorites →</a>
+    </section>
 
+    <section class="pixel-gallery">
+      <h2>Take a peek</h2>
+      <div class="gallery-grid">
+          <img src="images/Noodel.jpeg" alt="Orange and white cat in a white blanket" class="index-img">
+          <img src="images/pixel2.png" alt="Pixel art hobby" class="index-img">
+          <img src="images/pixel3.png" alt="Pixel art travel" class="index-img">
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-email">📧 shamita@umich.edu</p>
+        <div class="footer-copyright">
+            *ੈ✩‧₊˚ © Shamita Rao <span id="year"></span> *ੈ✩‧₊˚
+        </div>
+        <div class="footer-links">
+            <a href="https://www.linkedin.com/in/shamitarao/">LinkedIn</a>
+            <span>|</span>
+            <a href="https://github.com/shamita-rao">GitHub</a>
+        </div>
+    </footer>
+
+    <script src="js/global.js"></script>
 </body>
-</html>
