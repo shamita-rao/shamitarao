@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Download score handler - PNG version
+    // Download score handler - PNG version (using canvas)
     const generateCanvas = () => {
         const canvas = document.createElement('canvas');
         canvas.width = 800;
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Contact info
         ctx.font = '20px "Inter", sans-serif';
         ctx.fillStyle = '#FFC2C8';
-        ctx.fillText("Connect with Shamita:", canvas.width / 2, 420);
+        ctx.fillText("Connect with Shamita!:", canvas.width / 2, 420);
         ctx.font = '18px "Inter", sans-serif';
         ctx.fillStyle = '#B8B8B8';
         ctx.fillText("Email: shamita@umich.edu", canvas.width / 2, 460);

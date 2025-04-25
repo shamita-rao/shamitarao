@@ -1,41 +1,51 @@
-/* Base Styles */
+/* ============================================= */
+/* BASE STYLES - MOBILE FIRST                    */
+/* ============================================= */
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Ensures padding doesn't affect element dimensions */
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.skip{
+/* Skip to Content Link (Accessibility Feature) */
+.skip {
   position: absolute;
   height: 25px;
   background-color: #ffffff;
   top: -45px;
-  }
+  /* Hidden by default, visible when focused */
+}
 
-.skip:focus{
+.skip:focus {
   top: 25px;
-  }
+  /* Becomes visible when focused for keyboard navigation */
+}
 
+/* Body Styles */
 body {
   font-family: 'Inter', sans-serif;
+  /* gradient background with texture overlay */
   background: radial-gradient(circle at 20% 30%, rgba(221, 153, 153, 0.05), transparent 60%), 
               radial-gradient(circle at 80% 70%, rgba(255, 153, 153, 0.05), transparent 60%), 
               radial-gradient(circle at 50% 50%, rgba(222, 204, 204, 0.1), transparent 70%), 
               linear-gradient(135deg, #121212, #232323), 
               url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
   background-size: cover;
-  color: #E0E0E0; /* Light text for contrast */
+  color: #E0E0E0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   line-height: 1.6;
 }
 
-/* Navigation */
+/* ============================================= */
+/* NAVIGATION - MOBILE STYLES                    */
+/* ============================================= */
 .navbar {
   background-color: #1A1A1A;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -57,16 +67,17 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  color: #B8B8B8; /* Light gray */
+  color: #B8B8B8;
   font-weight: 500;
   transition: all 0.3s;
   padding: 0.5rem 0;
   position: relative;
 }
 
+/* Navigation hover/active states */
 .nav-links a:hover,
 .nav-links .active {
-  color: #D7A3B8; /* Dusty pink */
+  color: #D7A3B8;
 }
 
 .nav-links a::after {
@@ -76,7 +87,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: #D7A3B8; /* Dusty pink */
+  background: #D7A3B8;
   transition: width 0.3s;
 }
 
@@ -85,7 +96,9 @@ body {
   width: 100%;
 }
 
-/* Hero Section */
+/* ============================================= */
+/* HERO SECTION                */
+/* ============================================= */
 .hero {
   flex: 1;
   max-width: 1200px;
@@ -98,9 +111,10 @@ body {
   text-align: left;
 }
 
+
 .hero h1 {
   font-size: clamp(2.5rem, 8vw, 4.5rem);
-  color: #cc8484; /* Dusty pink */
+  color: #cc8484;
   margin-bottom: 1.5rem;
   line-height: 1.1;
   letter-spacing: -0.5px;
@@ -109,19 +123,20 @@ body {
 
 .hero h2 {
   font-size: clamp(1.25rem, 4vw, 1.75rem);
-  color: #C8C8C8; /* Lighter gray */
+  color: #C8C8C8;
   margin-bottom: 2rem;
   font-weight: 400;
   max-width: 600px;
 }
 
+/* Quiz Button Styles */
 .quiz-button-container {
   margin-top: 2rem;
 }
 
 .quiz-button {
   display: inline-block;
-  background: linear-gradient(to right, #D7A3B8, #A85E51); /* Gradient */
+  background: linear-gradient(to right, #D7A3B8, #A85E51);
   color: black;
   font-weight: bold;
   font-size: 1rem;
@@ -139,7 +154,9 @@ body {
   box-shadow: 0 6px 20px rgba(168, 94, 81, 0.6);
 }
 
-/* Footer */
+/* ============================================= */
+/* FOOTER                       */
+/* ============================================= */
 .footer {
   background-color: #1A1A1A;
   padding: 2rem 1rem;
@@ -173,32 +190,20 @@ body {
 }
 
 .footer-links a:hover {
-  color: #FFC2C8; /* Lighter pink */
+  color: #FFC2C8; 
 }
 
-/* Sections */
-section {
-  padding: 3rem 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.section-title {
-  font-size: clamp(1.75rem, 5vw, 2.5rem);
-  margin-bottom: 2rem;
-  color: #D7A3B8;
-}
-
-
-/* Quiz Page Styles */
+/* ============================================= */
+/* QUIZ PAGE STYLES                  */
+/* ============================================= */
 .quiz-container {
   max-width: 800px;
   margin: 2rem auto;
   padding: 1.5rem;
-  background-color: #1E1E1E; /* Dark background */
+  background-color: #1E1E1E;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  border: 1px solid #3D3D3D; /* Border color */
+  border: 1px solid #3D3D3D;
 }
 
 .quiz-container h1,
@@ -209,25 +214,25 @@ section {
 
 .quiz-container h1 {
   font-family: 'Playfair Display', serif;
-  color: #D7A3B8; /* Dusty pink */
+  color: #D7A3B8;
   font-size: 2rem;
 }
 
 .quiz-container h2 {
-  color: #B8B8B8; /* Gray text */
+  color: #B8B8B8;
   font-size: 1.25rem;
   font-weight: 400;
 }
 
-/* Question Cards */
+/* Question Card Styles */
 .question-card {
   display: none;
-  background-color: #1E1E1E; /* Dark background */
+  background-color: #1E1E1E;
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  border: 1px solid #3D3D3D; /* Border color */
+  border: 1px solid #3D3D3D;
 }
 
 .question-card.active {
@@ -236,7 +241,7 @@ section {
 
 .question-card p {
   font-weight: 600;
-  color: #FFC2C8; /* Lighter pink */
+  color: #FFC2C8;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
 }
@@ -259,11 +264,12 @@ input[type="radio"] {
   margin-right: 0.8rem;
 }
 
-/* Navigation Buttons */
+/* Quiz Navigation Buttons */
 .quiz-nav {
   display: flex;
   gap: 1rem;
   margin: 1.5rem 0;
+  flex-direction: column;
 }
 
 .prev-btn, .next-btn, .submit-btn {
@@ -297,33 +303,32 @@ input[type="radio"] {
   display: none;
 }
 
-/* Result Card */
+/* Result Card Styles */
 .result-card {
-  background-color: #1E1E1E; /* Dark background */
+  background-color: #1E1E1E;
   border-radius: 12px;
   padding: 2rem;
   margin: 2rem 0;
   text-align: center;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  border: 1px solid #3D3D3D; /* Border color */
+  border: 1px solid #3D3D3D;
 }
 
 .result-card h2 {
-  color: #FFC2C8; /* Lighter pink */
+  color: #FFC2C8;
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
 
 #score {
-  color: #D7A3B8; /* Dusty pink */
+  color: #D7A3B8;
   font-size: 2.5rem;
 }
 
 #download-card {
   display: inline-block;
   padding: 0.8rem 1.5rem;
-  background: linear-gradient(to right, #D7A3B8, #A85E51); /* Gradient */
-  color: white;
+  background: linear-gradient(to right, #D7A3B8, #A85E51);
   font-weight: 600;
   border: none;
   border-radius: 8px;
@@ -337,10 +342,10 @@ input[type="radio"] {
   box-shadow: 0 4px 12px rgba(215, 163, 184, 0.4);
 }
 
-/* Add to your CSS */
+/* Progress bar */
 .progress-bar {
   height: 4px;
-  background: #D7A3B8; /* Dusty pink */
+  background: #D7A3B8;
   position: fixed;
   top: 0;
   left: 0;
@@ -352,23 +357,15 @@ input[type="radio"] {
   display: none;
 }
 
+/* Animation for results */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  .quiz-nav {
-    flex-direction: column;
-  }
-
-  .quiz-container h1 {
-    font-size: 1.75rem;
-  }
-}
-
-/* Favourites Page Styles */
+/* ============================================= */
+/* FAVOURITES PAGE            */
+/* ============================================= */
 .favourites-content {
   max-width: 1200px;
   margin: 2rem auto;
@@ -432,17 +429,33 @@ input[type="radio"] {
   font-style: italic;
 }
 
-/* Tablet+ */
-@media (min-width: 768px) {
+/* ============================================= */
+/* TABLET VIEW (min-width: 600px)                */
+/* ============================================= */
+@media screen and (min-width: 700px) {
+  /* Quiz Navigation - Switch to horizontal layout */
+  .quiz-nav {
+    flex-direction: row; /* Side-by-side buttons on tablet+ */
+  }
+
+  /* Adjust quiz title size */
+  .quiz-container h1 {
+    font-size: 1.75rem;
+  }
+
+  /* Favourites grid - 2 columns */
   .favourites-grid {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Desktop */
-@media (min-width: 1024px) {
+/* ============================================= */
+/* DESKTOP VIEW (min-width: 1024px)              */
+/* ============================================= */
+@media screen and (min-width: 1024px) {
+  /* Favourites grid - 3 columns */
   .favourites-grid {
-      grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
