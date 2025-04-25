@@ -3,67 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>favourites</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Shamita's Favourites</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/html5reset.css" />
     <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
     <!-- Navigation bar -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-      <li><a href="favourites.html" class="active">Favourites</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="favourites.html" class="active">Favourites</a></li>
+        </ul>
+    </nav>
 
-  <div class="carousel">
-    <div class="carousel-track">
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favouritesৎ</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-      <span class="carousel-item">Favourites</span>
-    </div>
-  </div>
+    <!-- Main content -->
+    <main class="favourites-content">
+        <section class="favourites-section">
+            <h1 class="section-title">My Current Favourites 🌟</h1>
+            <div class="favourites-grid">
+                
+                <!-- Book Card -->
+                <div class="favourite-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Current Read</h3>
+                        <p>"Atomic Habits" by James Clear</p>
+                        <p class="card-desc">Learning how to build good habits and break bad ones</p>
+                    </div>
+                </div>
+                
+                <!-- Music Card -->
+                <div class="favourite-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+                    <div class="card-content">
+                        <h3>On Repeat</h3>
+                        <p>Lamp - "Yume Utsutsu"</p>
+                        <p class="card-desc">Japanese city pop perfect for coding sessions</p>
+                    </div>
+                </div>
+                
+                <!-- Food Card -->
+                <div class="favourite-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Food Craving</h3>
+                        <p>Tres Leches Cake</p>
+                        <p class="card-desc">The perfect balance of sweet and moist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-  <!-- main content -->
-  <main class="content">
+        <section class="favourites-section">
+            <h1 class="section-title">Everlasting Favourites ✨</h1>
+            <div class="favourites-grid">
+                
+                <!-- Childhood Book -->
+                <div class="favourite-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Childhood Book</h3>
+                        <p>"Harry Potter" Series</p>
+                        <p class="card-desc">The books that made me love reading</p>
+                    </div>
+                </div>
+                
+                <!-- Comfort Food -->
+                <div class="favourite-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Comfort Food</h3>
+                        <p>Masala Chai + Biscuits</p>
+                        <p class="card-desc">Perfect for rainy days and nostalgia</p>
+                    </div>
+                </div>
+                
+                <!-- All-time Artist -->
+                <div class="favourite-card">
+                    <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+                    <div class="card-content">
+                        <h3>Timeless Artist</h3>
+                        <p>Taylor Swift</p>
+                        <p class="card-desc">Soundtrack of my life since middle school</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <h1>My current favourites</h1>
-    <br>
-    <h1>Everlasting favourites</h1>
-  </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-email">📧 shamita@umich.edu</p>
+            <div class="footer-copyright">
+                *ੈ✩‧₊˚ © Shamita Rao <span id="year"></span> *ੈ✩‧₊˚
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/shamitarao/" class="footer-link">LinkedIn</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/shamita-rao" class="footer-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p class="footer-email">📧 shamita@umich.edu</p>
-      <div class="footer-copyright">
-        *ੈ✩‧₊˚ © Shamita Rao <span id="year"></span> *ੈ✩‧₊˚
-      </div>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/shamitarao/" class="footer-link">LinkedIn</a>
-        <span class="divider">|</span>
-        <a href="https://github.com/shamita-rao" class="footer-link">GitHub</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="js/navbar.js"></script>
-  <script src="js/global.js"></script>
-
+    <script src="js/global.js"></script>
 </body>
 </html>

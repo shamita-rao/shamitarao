@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>shamitarao</title>
+    <link rel="stylesheet" href="styles/html5reset.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
@@ -31,51 +32,44 @@
       </div>
     </main>
 
-    <section class="fun-facts">
-      <h2>Did You Know?</h2>
-      <div class="facts-grid">
-          <div class="fact-card">
-              <span>🎓</span>
-              <p>I'm currently studying at the University of Michigan</p>
-          </div>
-          <div class="fact-card">
-              <span>🐱</span>
-              <p>I have a cat!</p>
-          </div>
-          <div class="fact-card">
-              <span>🎨</span>
-              <p>I love combining tech with creative design</p>
-          </div>
-      </div>
-    </section>
 
-    <section class="current-faves">
-      <h2>My Current Favourites</h2>
-      <div class="faves-container">
-          <div class="fave-item">
-              <h3>📚 Book</h3>
-              <p>The Starless Sea by Erin Morgenstern</p>
+    <div class="favourites-content">
+      <section class="favourites-section">
+          <h1 class="section-title">My Current Favourites 🌟</h1>
+          <div class="favourites-grid">
+              
+              <!-- Book Card -->
+              <div class="favourite-card">
+                  <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+                  <div class="card-content">
+                      <h3>Current Read</h3>
+                      <p>"Atomic Habits" by James Clear</p>
+                      <p class="card-desc">Learning how to build good habits and break bad ones</p>
+                  </div>
+              </div>
+              
+              <!-- Music Card -->
+              <div class="favourite-card">
+                  <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+                  <div class="card-content">
+                      <h3>On Repeat</h3>
+                      <p>Lamp - "Yume Utsutsu"</p>
+                      <p class="card-desc">Japanese city pop perfect for coding sessions</p>
+                  </div>
+              </div>
+              
+              <!-- Food Card -->
+              <div class="favourite-card">
+                  <div class="card-image" style="background-image: url('https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80')"></div>
+                  <div class="card-content">
+                      <h3>Food Craving</h3>
+                      <p>Tres Leches Cake</p>
+                      <p class="card-desc">The perfect balance of sweet and moist</p>
+                  </div>
+              </div>
           </div>
-          <div class="fave-item">
-              <h3>🎵 Song</h3>
-              <p>No One Noticed by The Marias</p>
-          </div>
-          <div class="fave-item">
-              <h3>🍜 Food</h3>
-              <p>Chilli peanut ramen (by me)</p>
-          </div>
-      </div>
-      <a href="favourites.html" class="see-more">See all favorites →</a>
-    </section>
-
-    <section class="pixel-gallery">
-      <h2>Take a peek</h2>
-      <div class="gallery-grid">
-          <img src="images/Noodel.jpeg" alt="Orange and white cat in a white blanket" class="index-img">
-          <img src="images/pixel2.png" alt="Pixel art hobby" class="index-img">
-          <img src="images/pixel3.png" alt="Pixel art travel" class="index-img">
-      </div>
-    </section>
+      </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -92,3 +86,4 @@
 
     <script src="js/global.js"></script>
 </body>
+</html>

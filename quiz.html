@@ -3,70 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>favourites</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/html5reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <title>How Well Do You Know Shamita?</title>
+    <link rel="stylesheet" href="styles/html5reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 </head>
 <body>
     <!-- Navigation bar -->
-  <nav class="navbar">
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="quiz.html" class="active">Quiz</a></li>
-      <li><a href="favourites.html">Favourites</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="quiz.html" class="active">Quiz</a></li>
+            <li><a href="favourites.html">Favourites</a></li>
+        </ul>
+    </nav>
 
-  <div class="carousel">
-    <div class="carousel-track">
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!ৎ</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-      <span class="carousel-item">Quiz Yourself!</span>
-    </div>
-  </div>
-  <!-- main content -->
-  <main class="content">
+    <!-- Quiz Container -->
+    <main class="quiz-container">
+        <h1>How well do you know Shamita?</h1>
+        <h2>Take the quiz to find out!</h2>
 
-    <h1>How well do you know Shamita?</h1>
-    <br>
-    <br>
-    <h2>Quiz content will display below</h2>
-    <br>
-    <h3>Quiz will be made using a form and integrate with FormSpree!</h3>
-  </main>
+        <div class="quiz-content">
+            <!-- Question Cards -->
+            <div class="question-card active">
+                <p>1. What is Shamita's favourite hobby?</p>
+                <label class="option"><input type="radio" name="q1" value="1"> Singing</label>
+                <label class="option"><input type="radio" name="q1" value="2"> Reading</label>
+                <label class="option"><input type="radio" name="q1" value="3"> Going for a run</label>
+            </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-content">
-      <p class="footer-email">📧 shamita@umich.edu</p>
-      <div class="footer-copyright">
-        *ੈ✩‧₊˚ © Shamita Rao <span id="year"></span> *ੈ✩‧₊˚
-      </div>
-      <div class="footer-links">
-        <a href="https://www.linkedin.com/in/shamitarao/" class="footer-link">LinkedIn</a>
-        <span class="divider">|</span>
-        <a href="https://github.com/shamita-rao" class="footer-link">GitHub</a>
-      </div>
-    </div>
-  </footer>
+            <div class="question-card">
+                <p>2. What is Shamita's favourite grocery store?</p>
+                <label class="option"><input type="radio" name="q2" value="1"> Trader Joe's</label>
+                <label class="option"><input type="radio" name="q2" value="2"> Costco</label>
+                <label class="option"><input type="radio" name="q2" value="3"> Kroger's</label>
+            </div>
 
-  <script src="js/navbar.js"></script>
-  <script src="js/global.js"></script>
-  <script src="js/quiz.js" class="active"></script>
+            <div class="question-card">
+              <p>3. What is Shamita's favourite beverage?</p>
+              <label class="option"><input type="radio" name="q3" value="1"> Black coffee</label>
+              <label class="option"><input type="radio" name="q3" value="2"> Caramel latte</label>
+              <label class="option"><input type="radio" name="q3" value="3"> Masala Chai</label>
+            </div>
 
+            <div class="question-card">
+              <p>4. What is Shamita's favourite type of cake?</p>
+              <label class="option"><input type="radio" name="q4" value="1"> Chocolate cake</label>
+              <label class="option"><input type="radio" name="q4" value="2"> Strawberry shortcake</label>
+              <label class="option"><input type="radio" name="q4" value="3"> Tres leches</label>
+            </div>
+
+            <div class="question-card">
+              <p>5. What genre of books does Shamita love to read?</p>
+              <label class="option"><input type="radio" name="q5" value="1"> Horror</label>
+              <label class="option"><input type="radio" name="q5" value="2"> Literary fiction</label>
+              <label class="option"><input type="radio" name="q5" value="3"> Non-fiction</label>
+            </div>
+
+            <div class="question-card">
+              <p>6. What is one of Shamita's 2025 goals?</p>
+              <label class="option"><input type="radio" name="q6" value="1"> Read 30 books</label>
+              <label class="option"><input type="radio" name="q6" value="2"> Go on a trek</label>
+              <label class="option"><input type="radio" name="q6" value="3"> Go to a concert</label>
+            </div>
+
+            <div class="question-card">
+              <p>7. What is Shamita's cat's name?</p>
+              <label class="option"><input type="radio" name="q7" value="1"> Pasta</label>
+              <label class="option"><input type="radio" name="q7" value="2"> Noodel</label>
+              <label class="option"><input type="radio" name="q7" value="3"> Mochi</label>
+            </div>
+
+            <div class="question-card">
+              <p>8. Who is Shamita's favourite band?</p>
+              <label class="option"><input type="radio" name="q8" value="1"> Lamp</label>
+              <label class="option"><input type="radio" name="q8" value="2"> The Wallows</label>
+              <label class="option"><input type="radio" name="q8" value="3"> The Marias</label>
+            </div>
+
+            <div class="question-card">
+              <p>9. Which is Shamita's favourite season?</p>
+              <label class="option"><input type="radio" name="q9" value="1"> Summer</label>
+              <label class="option"><input type="radio" name="q9" value="2"> Winter</label>
+              <label class="option"><input type="radio" name="q9" value="3"> Spring</label>
+            </div>
+
+            <div class="question-card">
+              <p>10. What colour was Shamita's hair the first time she coloured it?</p>
+              <label class="option"><input type="radio" name="q10" value="1"> Blue</label>
+              <label class="option"><input type="radio" name="q10" value="2"> Red</label>
+              <label class="option"><input type="radio" name="q10" value="3"> Pink</label>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="quiz-nav">
+                <button class="prev-btn">Previous</button>
+                <button class="next-btn">Next</button>
+            </div>
+
+            <button type="button" class="submit-btn">Submit Quiz</button>
+        </div>
+
+        <!-- Result Card -->
+        <div class="result-card hidden">
+            <h2>Your Score: <span id="score">0</span>/10</h2>
+            <p id="result-message"></p>
+            <button id="download-card">Download Your Score Card</button>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-email">📧 shamita@umich.edu</p>
+            <div class="footer-copyright">
+                *ੈ✩‧₊˚ © Shamita Rao <span id="year"></span> *ੈ✩‧₊˚
+            </div>
+            <div class="footer-links">
+                <a href="https://www.linkedin.com/in/shamitarao/" class="footer-link">LinkedIn</a>
+                <span class="divider">|</span>
+                <a href="https://github.com/shamita-rao" class="footer-link">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/global.js"></script>
+    <script src="js/quiz.js"></script>
 </body>
 </html>
